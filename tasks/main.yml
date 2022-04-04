@@ -1,2 +1,8 @@
 ---
-# tasks file for arole-docker
+- hosts: 
+  become: yes
+  #become_user: root
+  become_method: sudo
+  tasks:
+    - name: install docker and repo
+      include_tasks: install_docker_ce.yml
