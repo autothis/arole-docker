@@ -1,7 +1,6 @@
 ---
-- hosts: localhost
+- hosts: <destination_host>
   become: yes
-  #become_user: root
   become_method: sudo
   tasks:
     - name: install docker and repo
