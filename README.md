@@ -34,9 +34,13 @@ Including an example of how to use your role (for instance, with variables passe
 
 ---
 - hosts: <destination_host>
+
   become: yes
+  
   become_method: sudo
+  
   roles: 
+  
     - arole-docker
 
 License
